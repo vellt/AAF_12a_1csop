@@ -40,6 +40,12 @@ namespace tic_tac_toe
         private void UjJatek_MouseUp(object sender, MouseButtonEventArgs e)
         {
             // reset
+            palya.Children.Cast<Border>().ToList().ForEach(x =>
+            {
+                x.Background = (Brush)new BrushConverter().ConvertFrom("#2D2D2D");
+                (x.Child as TextBlock).Text = "";
+            });
+            jatekVege = false;
         }
 
         private void X_MouseUp(object sender, MouseButtonEventArgs e)
@@ -57,6 +63,20 @@ namespace tic_tac_toe
                 // addig léphetek
                 textBlock.Text = "X";
                 jatekVegenekEllenorzese(); // lehet nyertem??
+                GepLepes();
+                jatekVegenekEllenorzese(); // lehet nyert a gép??
+            }
+        }
+
+        private void GepLepes()
+        {
+            if (jatekVege==false) // még nincs vége a játéknak
+            {
+                List<Border> szabadMezok = palya.Children.Cast<Border>()
+                    .Where(x => (x.Child as TextBlock).Text == "").ToList();
+                Random r = new Random();
+                Border kivalasztottMezo = szabadMezok[r.Next(szabadMezok.Count)];
+                (kivalasztottMezo.Child as TextBlock).Text = "O";
             }
         }
 
@@ -70,27 +90,92 @@ namespace tic_tac_toe
                 .Where(x => (x.Child as TextBlock).Text == "").ToList();
 
             // akkor van vége a játéknak, ha győzött az X vagy az O vagy már nincs szabad hely!
-            jatekVege = Gyozott("X") || Gyozott("O") || szabadMezok.Count == 0;
+            jatekVege = Gyozott("X",Brushes.Green) || Gyozott("O", Brushes.Red) || szabadMezok.Count == 0;
         }
 
-        private bool Gyozott(string jatekos)
+        private bool Gyozott(string jatekos, SolidColorBrush color)
         {
             // győzelmi logika megírása
+            List<TextBlock> mezok= palya.Children.Cast<Border>()
+                .Select(x => x.Child as TextBlock).ToList();
+            if(mezok[0].Text==jatekos && mezok[1].Text==jatekos && mezok[2].Text == jatekos)
+            {
+                (mezok[0].Parent as Border).Background = color;
+                (mezok[1].Parent as Border).Background = color;
+                (mezok[2].Parent as Border).Background = color;
+                return true;
+            }
+            if(mezok[3].Text == jatekos && mezok[4].Text == jatekos && mezok[5].Text == jatekos)
+            {
+                (mezok[3].Parent as Border).Background = color;
+                (mezok[4].Parent as Border).Background = color;
+                (mezok[5].Parent as Border).Background = color;
+                return true;
+            }
+            if (mezok[6].Text == jatekos && mezok[7].Text == jatekos && mezok[8].Text == jatekos)
+            {
+                (mezok[6].Parent as Border).Background = color;
+                (mezok[7].Parent as Border).Background = color;
+                (mezok[8].Parent as Border).Background = color;
+                return true;
+            }
+            if (mezok[0].Text == jatekos && mezok[3].Text == jatekos && mezok[6].Text == jatekos)
+            {
+                (mezok[0].Parent as Border).Background = color;
+                (mezok[3].Parent as Border).Background = color;
+                (mezok[6].Parent as Border).Background = color;
+                return true;
+            }
+            if (mezok[1].Text == jatekos && mezok[4].Text == jatekos && mezok[7].Text == jatekos)
+            {
+                (mezok[1].Parent as Border).Background = color;
+                (mezok[4].Parent as Border).Background = color;
+                (mezok[7].Parent as Border).Background = color;
+                return true;
+            }
+            if (mezok[2].Text == jatekos && mezok[5].Text == jatekos && mezok[8].Text == jatekos)
+            {
+                (mezok[2].Parent as Border).Background = color;
+                (mezok[5].Parent as Border).Background = color;
+                (mezok[8].Parent as Border).Background = color;
+                return true;
+            }
+            if (mezok[0].Text == jatekos && mezok[4].Text == jatekos && mezok[8].Text == jatekos)
+            {
+                (mezok[0].Parent as Border).Background = color;
+                (mezok[4].Parent as Border).Background = color;
+                (mezok[8].Parent as Border).Background = color;
+                return true;
+            }
+            if (mezok[2].Text == jatekos && mezok[4].Text == jatekos && mezok[6].Text == jatekos)
+            {
+                (mezok[2].Parent as Border).Background = color;
+                (mezok[4].Parent as Border).Background = color;
+                (mezok[6].Parent as Border).Background = color;
+                return true;
+            }
             return false; // nem nyertem
         }
 
         private void X_MouseLeave(object sender, MouseEventArgs e)
         {
             // hover-hez kell
-            Border mezo = sender as Border;
-            mezo.Background = (Brush)new BrushConverter().ConvertFrom("#2D2D2D");
+            if (jatekVege==false)
+            {
+                Border mezo = sender as Border;
+                mezo.Background = (Brush)new BrushConverter().ConvertFrom("#2D2D2D");
+            }
         }
 
         private void X_MouseEnter(object sender, MouseEventArgs e)
         {
             // hover-hez kell
-            Border mezo = sender as Border;
-            mezo.Background = (Brush)new BrushConverter().ConvertFrom("#383838");
+            if (jatekVege==false)
+            {
+                Border mezo = sender as Border;
+                mezo.Background = (Brush)new BrushConverter().ConvertFrom("#383838");
+            }
+            
         }
     }
 }

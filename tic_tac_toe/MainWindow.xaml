@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:tic_tac_toe"
         mc:Ignorable="d"
+        Icon="tictactoe.ico"
         Title="Tic-Tac-Toe" Height="700" Width="700" MinHeight="700" MinWidth="700"
         BorderBrush="White" BorderThickness="5" Background="#222222"
         Foreground="White" FontFamily="Lucida Console">
