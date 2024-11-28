@@ -21,12 +21,16 @@ namespace WpfApp46
     /// </summary>
     public partial class MainWindow : Window
     {
-        List<string> uzenetek = new List<string>();
+        string[] uzenetek = new string[]
+        {
+            "Eslő üzi",
+            "Második üzi",
+            "Harmadik üzi"
+        };
         
         public MainWindow()
         {
             InitializeComponent();
-            uzenetek = File.ReadAllLines("uzik.csv").ToList();
             gomb.Click += Gomb_Click;
 
         }
@@ -34,7 +38,7 @@ namespace WpfApp46
         private void Gomb_Click(object sender, RoutedEventArgs e)
         {
             Random r = new Random();
-            int index = r.Next(uzenetek.Count());
+            int index = r.Next(uzenetek.Length);
             uzi.Text = uzenetek[index];
         }
     }
