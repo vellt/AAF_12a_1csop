@@ -1,0 +1,20 @@
+﻿<Window x:Class="memegenerátor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:memegenerátor"
+        mc:Ignorable="d"
+        Background="Black"
+        Title="MainWindow" Height="600" Width="800">
+    <Grid>
+        <Button Name="letoltes" Click="SaveStackPanelAsImage" VerticalAlignment="Top" HorizontalAlignment="Left" Width="40">
+            <Image Source="532.png"/>
+        </Button>
+        <StackPanel Name="myStackPanel" Margin="30">
+                <Image Name="kep" Source="1.jpg" Height="300"/>
+            <TextBlock Name="szoveg" Text="Amikor éppen prezentációt tartasz, és valaki szól, hogy beszélj hangosabban." Foreground="White"  Margin="50 0 " TextWrapping="Wrap" FontSize="30"/>
+        </StackPanel>
+        <Button Name="gomb" Content="Új meme"  FontSize="30" Background="Yellow" Foreground="Orange" BorderBrush="Orange" FontWeight="Bold" BorderThickness="7" Width="250" Height="100" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+    </Grid>
+</Window>
