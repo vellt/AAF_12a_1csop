@@ -1,0 +1,33 @@
+﻿<Window x:Class="memehazi.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:memehazi"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800">
+    <Grid Background="Black">
+        <Border BorderBrush="Yellow" BorderThickness="5">
+            
+            <!--<StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Image Name="kep" Source="1.jpg" Width="500" Height="300" Margin="20"/>
+                <TextBlock Name="szoveg" Text="Amikor pizzát rendelsz, és a csóró haverod odaszól, hogy csirkeszárnyat is." Foreground="White" FontSize="30" Width="600" TextWrapping="Wrap" TextAlignment="Center"/>
+                <Button Name="gomb" Content="Új meme" Background="Yellow" Width="200" Height="50" Margin="20" BorderBrush="Orange" BorderThickness="3" Foreground="Orange" FontSize="30" FontWeight="Bold"/>
+            </StackPanel>-->
+
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <StackPanel Name="mentendoPanel" Orientation="Vertical" HorizontalAlignment="Center">
+                    <Image Name="kep" Source="1.jpg" Width="500" Height="300" Margin="20"/>
+                    <TextBlock Name="szoveg" Text="Amikor pizzát rendelsz, és a csóró haverod odaszól, hogy csirkeszárnyat is." 
+                               Foreground="White" FontSize="30" Width="600" TextWrapping="Wrap" TextAlignment="Center"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="20">
+                    <Button Name="gomb" Content="Új meme" Background="Yellow" Width="200" Height="50" Margin="10"
+                            BorderBrush="Orange" BorderThickness="3" Foreground="Orange" FontSize="30" FontWeight="Bold"/>
+                    <Button Name="mentesGomb" Content="Mentés" Background="Yellow" Width="200" Height="50" Margin="10"
+                            BorderBrush="Orange" BorderThickness="3" Foreground="Orange" FontSize="30" FontWeight="Bold"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

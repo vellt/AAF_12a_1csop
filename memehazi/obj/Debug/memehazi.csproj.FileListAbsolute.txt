@@ -1,0 +1,15 @@
+C:\Programing\c#\memehazi\memehazi\obj\Debug\memehazi.csproj.AssemblyReference.cache
+C:\Programing\c#\memehazi\memehazi\obj\Debug\MainWindow.g.cs
+C:\Programing\c#\memehazi\memehazi\obj\Debug\App.g.cs
+C:\Programing\c#\memehazi\memehazi\obj\Debug\memehazi_MarkupCompile.cache
+C:\Programing\c#\memehazi\memehazi\obj\Debug\memehazi_MarkupCompile.lref
+C:\Programing\c#\memehazi\memehazi\bin\Debug\memehazi.exe.config
+C:\Programing\c#\memehazi\memehazi\bin\Debug\memehazi.exe
+C:\Programing\c#\memehazi\memehazi\bin\Debug\memehazi.pdb
+C:\Programing\c#\memehazi\memehazi\obj\Debug\MainWindow.baml
+C:\Programing\c#\memehazi\memehazi\obj\Debug\memehazi.g.resources
+C:\Programing\c#\memehazi\memehazi\obj\Debug\memehazi.Properties.Resources.resources
+C:\Programing\c#\memehazi\memehazi\obj\Debug\memehazi.csproj.GenerateResource.cache
+C:\Programing\c#\memehazi\memehazi\obj\Debug\memehazi.csproj.CoreCompileInputs.cache
+C:\Programing\c#\memehazi\memehazi\obj\Debug\memehazi.exe
+C:\Programing\c#\memehazi\memehazi\obj\Debug\memehazi.pdb
