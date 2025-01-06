@@ -1,0 +1,6 @@
+C:\Users\user\source\repos\Storage2\Storage2\bin\Debug\Storage2.dll
+C:\Users\user\source\repos\Storage2\Storage2\bin\Debug\Storage2.pdb
+C:\Users\user\source\repos\Storage2\Storage2\obj\Debug\Storage2.csprojAssemblyReference.cache
+C:\Users\user\source\repos\Storage2\Storage2\obj\Debug\Storage2.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Storage2\Storage2\obj\Debug\Storage2.dll
+C:\Users\user\source\repos\Storage2\Storage2\obj\Debug\Storage2.pdb
