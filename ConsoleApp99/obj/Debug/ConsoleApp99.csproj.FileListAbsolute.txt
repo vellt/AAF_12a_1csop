@@ -1,0 +1,9 @@
+C:\Users\user\source\repos\ConsoleApp99\ConsoleApp99\bin\Debug\ConsoleApp99.exe.config
+C:\Users\user\source\repos\ConsoleApp99\ConsoleApp99\bin\Debug\ConsoleApp99.exe
+C:\Users\user\source\repos\ConsoleApp99\ConsoleApp99\bin\Debug\ConsoleApp99.pdb
+C:\Users\user\source\repos\ConsoleApp99\ConsoleApp99\bin\Debug\Storage2.dll
+C:\Users\user\source\repos\ConsoleApp99\ConsoleApp99\obj\Debug\ConsoleApp99.csprojAssemblyReference.cache
+C:\Users\user\source\repos\ConsoleApp99\ConsoleApp99\obj\Debug\ConsoleApp99.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\ConsoleApp99\ConsoleApp99\obj\Debug\ConsoleApp99.csproj.CopyComplete
+C:\Users\user\source\repos\ConsoleApp99\ConsoleApp99\obj\Debug\ConsoleApp99.exe
+C:\Users\user\source\repos\ConsoleApp99\ConsoleApp99\obj\Debug\ConsoleApp99.pdb
