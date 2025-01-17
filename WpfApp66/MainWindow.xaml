@@ -19,21 +19,21 @@
         </Grid.ColumnDefinitions>
 
         <!--első sor-->
-        <StackPanel Grid.Row="0" Grid.Column="0" VerticalAlignment="Center">
+        <StackPanel Name="leiras" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center">
             <TextBlock Text="Három ajtó van előtted.." FontSize="15" FontStyle="Italic"/>
             <TextBlock Text="Az egyik mögött szellem van." FontSize="15" FontStyle="Italic"/>
             <TextBlock Text="Melyiket nyitod ki?" FontSize="20" FontWeight="Bold"/>
         </StackPanel>
 
-        <TextBlock Grid.Row="0" Grid.Column="1" Text="Kísértetház" 
+        <TextBlock Name="cim" Grid.Row="0" Grid.Column="1" Text="Kísértetház" 
                    HorizontalAlignment="Center" FontSize="40" FontWeight="Bold"/>
 
-        <TextBlock Grid.Row="0" Grid.Column="2" Text="Rekord: 0"
+        <TextBlock Name="rekord" Grid.Row="0" Grid.Column="2" Text="Rekord: 0"
                    HorizontalAlignment="Right" Foreground="Orange" FontWeight="ExtraBold"/>
         
         <!-- második sor -->
         <Grid Grid.Row="1" Grid.Column="0">
-            <Image Visibility="Hidden" Source="ghost.png" Height="150" RenderTransformOrigin="0.5,0.5" Margin="-56,10,56,204">
+            <Image Name="szellem1" Visibility="Hidden" Source="ghost.png" Height="150" RenderTransformOrigin="0.5,0.5" Margin="-56,10,56,204">
                 <Image.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -43,7 +43,7 @@
                     </TransformGroup>
                 </Image.RenderTransform>
             </Image>
-            <Image Source="door1.png" Height="200"/>
+            <Image Name="ajto1" Tag="1" Source="door1.png" Height="200"/>
         </Grid>
 
         <Grid Grid.Row="1" Grid.Column="1">
@@ -57,7 +57,7 @@
                     </TransformGroup>
                 </Image.RenderTransform>
             </Image>
-            <Image Source="door2.png" Height="200"/>
+            <Image Name="ajto2" Tag="2" Source="door2.png" Height="200"/>
         </Grid>
 
         <Grid Grid.Row="1" Grid.Column="3">
@@ -71,17 +71,17 @@
                     </TransformGroup>
                 </Image.RenderTransform>
             </Image>
-            <Image Source="door3.png" Height="200"/>
+            <Image Name="ajto3" Tag="3" Source="door3.png" Height="200"/>
         </Grid>
 
         <!-- harmadik sor-->
         <StackPanel Grid.Row="2" Grid.ColumnSpan="3" Orientation="Horizontal"
                     HorizontalAlignment="Center">
-            <Button Content="Új játék" Padding="6" FontSize="15" FontWeight="ExtraBold"
+            <Button Name="ujJatek" Content="Új játék" Padding="6" FontSize="15" FontWeight="ExtraBold"
                     Foreground="Orange" Background="Yellow" />
-            <Button Content="Téma" Padding="6" FontSize="15" FontWeight="ExtraBold"
+            <Button Name="temaGomb" Content="Téma" Padding="6" FontSize="15" FontWeight="ExtraBold"
                     Foreground="Orange" Background="Yellow" Margin="10 0"/>
-            <TextBlock Text="Pontszámod: 0" FontWeight="ExtraBold" Foreground="Orange"
+            <TextBlock Name="pontszamSzoveg" Text="Pontszámod: 0" FontWeight="ExtraBold" Foreground="Orange"
                        VerticalAlignment="Center" FontSize="15"/>
         </StackPanel>
     </Grid>
