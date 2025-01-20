@@ -1,0 +1,15 @@
+C:\Users\user\source\repos\WpfApp73\WpfApp73\bin\Debug\WpfApp73.exe.config
+C:\Users\user\source\repos\WpfApp73\WpfApp73\bin\Debug\WpfApp73.exe
+C:\Users\user\source\repos\WpfApp73\WpfApp73\bin\Debug\WpfApp73.pdb
+C:\Users\user\source\repos\WpfApp73\WpfApp73\obj\Debug\WpfApp73.csprojAssemblyReference.cache
+C:\Users\user\source\repos\WpfApp73\WpfApp73\obj\Debug\MainWindow.g.cs
+C:\Users\user\source\repos\WpfApp73\WpfApp73\obj\Debug\App.g.cs
+C:\Users\user\source\repos\WpfApp73\WpfApp73\obj\Debug\WpfApp73_MarkupCompile.cache
+C:\Users\user\source\repos\WpfApp73\WpfApp73\obj\Debug\WpfApp73_MarkupCompile.lref
+C:\Users\user\source\repos\WpfApp73\WpfApp73\obj\Debug\MainWindow.baml
+C:\Users\user\source\repos\WpfApp73\WpfApp73\obj\Debug\WpfApp73.g.resources
+C:\Users\user\source\repos\WpfApp73\WpfApp73\obj\Debug\WpfApp73.Properties.Resources.resources
+C:\Users\user\source\repos\WpfApp73\WpfApp73\obj\Debug\WpfApp73.csproj.GenerateResource.cache
+C:\Users\user\source\repos\WpfApp73\WpfApp73\obj\Debug\WpfApp73.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\WpfApp73\WpfApp73\obj\Debug\WpfApp73.exe
+C:\Users\user\source\repos\WpfApp73\WpfApp73\obj\Debug\WpfApp73.pdb
